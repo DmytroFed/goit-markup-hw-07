@@ -20,190 +20,190 @@
 <body>
     <!--Header-->
     <header class="header">
-        <div class="container main-nav">
-            <nav class="nav">
-                <a class="logo" href="./index.html">Web<span class="logo-blue">Studio</span></a>
-                <ul class="nav list">
-                    <li class="item"><a class="nav-list-item" href="./index.html">Студия</a></li>
-                    <li class="item"><a class="nav-list-item current" href="./portfolio.html">Портфолио</a></li>
-                    <li class="item"><a class="nav-list-item" href="">Контакты</a></li>
-                </ul>
-            </nav>
-            <ul class="contacts-header list">
-                <li class="item"><a class="contacts-header-item icon-env" href="mailto:info@devstudio.com">
-                        <svg class="icon-header-mail" width="16" height="12">
-                            <use href="./images/symbol-defs.svg#header-icon1"></use>
-                        </svg>info@devstudio.com</a>
-                </li>
-                <li class="item"><a class="contacts-header-item icon-tel" href="tel:+380961111111">
-                        <svg class="icon-header-mail" width="10" height="16">
-                            <use href="./images/symbol-defs.svg#header-icon2"></use>
-                        </svg>+38 096 111 11 11</a>
-                </li>
-            </ul>
-        </div>
+                <div class="container main-nav">
+                    <nav class="nav">
+                        <a class="nav__logo logo" href="./index.html">Web<span class="nav__logo--blue">Studio</span></a>
+                        <ul class="nav__list list">
+                            <li class="nav__item"><a class="nav__link" href="./index.html">Студия</a></li>
+                            <li class="nav__item"><a class="nav__link current" href="./portfolio.html">Портфолио</a></li>
+                            <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="contacts-header list">
+                        <li class="contacts-header__item"><a class="contacts-header__link--env" href="mailto:info@devstudio.com">
+                                <svg class="contacts-header__icon" width="16" height="12">
+                                    <use href="./images/symbol-defs.svg#header-icon1"></use>
+                                </svg>info@devstudio.com</a>
+                        </li>
+                        <li class="contacts-header__item"><a class="contacts-header__link--tel" href="tel:+380961111111">
+                                <svg class="contacts-header__icon" width="10" height="16">
+                                    <use href="./images/symbol-defs.svg#header-icon2"></use>
+                                </svg>+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </div>
     </header>
     <main>
         <!--Наши работы=================-->
         <section class="portfolio">
             <div class="container">
                 <h1 hidden>Портфолио</h1>
-                <div class="main-section">
-                    <ul class="filter list">
-                        <li class="item"><button class="button-item current" type="button">Все</button></li>
-                        <li class="item"><button class="button-item" type="button">Веб-сайты</button></li>
-                        <li class="item"><button class="button-item" type="button">Приложения</button></li>
-                        <li class="item"><button class="button-item" type="button">Дизайн</button></li>
-                        <li class="item"><button class="button-item" type="button">Маркетинг</button></li>
+                <div class="main__section">
+                    <ul class="filter__list list">
+                        <li class="filter__item"><button class="filter__button current" type="button">Все</button></li>
+                        <li class="filter__item"><button class="filter__button" type="button">Веб-сайты</button></li>
+                        <li class="filter__item"><button class="filter__button" type="button">Приложения</button></li>
+                        <li class="filter__item"><button class="filter__button" type="button">Дизайн</button></li>
+                        <li class="filter__item"><button class="filter__button" type="button">Маркетинг</button></li>
                     </ul>
                 </div>
                 <!--Фильтр портфолио=============-->
-                <div class="works-box">
-                    <ul class="works cards-list">
-                        <li class="item">
-                            <a href="" class="link-img">
-                                <div class="card-thumb">
-                                    <img class="images" src="./images/img01.jpg" alt="Ноутбук" width="370" height="294">
-                                <div class="thumb-box">
-                                    <p class="thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                <div class="works__box">
+                    <ul class="works__cards-list">
+                        <li class="works__item">
+                            <a href="" class="works__link">
+                                <div class="thumb__card">
+                                    <img class="thumb__images" src="./images/img01.jpg" alt="Ноутбук" width="370" height="294">
+                                <div class="thumb__box">
+                                    <p class="thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить
                                         исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
                                 </div>   
                                     <div class="exemple">
-                                      <h2 class="works-item">Технокряк</h2>
-                                    <p class="works-text">Веб-сайт</p>
+                                      <h2 class="exemple__item">Технокряк</h2>
+                                    <p class="exemple__text">Веб-сайт</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="item">
-                            <a href="" class="link-img">
-                                <div class="card-thumb">
-                                <img class="images" src="./images/img02.jpg" alt="Баскетболисты" width="370"
+                        <li class="works__item">
+                            <a href="" class="works__link">
+                                <div class="thumb__card">
+                                <img class="thumb__images" src="./images/img02.jpg" alt="Баскетболисты" width="370"
                                     height="294">
-                                    <div class="thumb-box">
-                                    <p class="thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    <div class="thumb__box">
+                                    <p class="thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.</p>
                                     </div>
                                 </div>
                                 <div class="exemple">
-                                    <h2 class="works-item">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-                                    <p class="works-text">Дизайн</p>
+                                    <h2 class="exemple__item">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                                    <p class="exemple__text">Дизайн</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="item">
-                            <a href="" class="link-img">
-                                <div class="card-thumb">
-                                <img class="images" src="./images/img03.jpg" alt="Банер ресторана" width="370"
+                        <li class="works__item">
+                            <a href="" class="works__link">
+                                <div class="thumb__card">
+                                <img class="thumb__images" src="./images/img03.jpg" alt="Банер ресторана" width="370"
                                     height="294">
-                                    <div class="thumb-box">
-                                        <p class="thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    <div class="thumb__box">
+                                        <p class="thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                             позволит посетителю получить
                                             исчерпывающие сведения о компании или частном лице.</p>
                                     </div>
                                     </div>
                                 <div class="exemple">
-                                    <h2 class="works-item">Ресторан <span lang="en">Seafood</span></h2>
-                                    <p class="works-text">Приложение</p>
+                                    <h2 class="exemple__item">Ресторан <span lang="en">Seafood</span></h2>
+                                    <p class="exemple__text">Приложение</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="item">
-                            <a href="" class="link-img">
-                                <div class="card-thumb">
-                                <img class="images" src="./images/img04.jpg" alt="Наушники" width="370" height="294">
-                                <div class="thumb-box">
-                                    <p class="thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                        <li class="works__item">
+                            <a href="" class="works__link">
+                                <div class="thumb__card">
+                                <img class="thumb__images" src="./images/img04.jpg" alt="Наушники" width="370" height="294">
+                                <div class="thumb__box">
+                                    <p class="thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить
                                         исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
                                 </div>
                                 <div class="exemple">
-                                    <h2 class="works-item">Проект <span lang="en">Prime</span></h2>
-                                    <p class="works-text">Маркетинг</p>
+                                    <h2 class="exemple__item">Проект <span lang="en">Prime</span></h2>
+                                    <p class="exemple__text">Маркетинг</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="item">
-                            <a href="" class="link-img">
-                                <div class="card-thumb">
-                                <img class="images" src="./images/img05.jpg" alt="Два бокса" width="370" height="294">
-                                <div class="thumb-box">
-                                    <p class="thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                        <li class="works__item">
+                            <a href="" class="works__link">
+                                <div class="thumb__card card-thumb">
+                                <img class="thumb__images" src="./images/img05.jpg" alt="Два бокса" width="370" height="294">
+                                <div class="thumb__box">
+                                    <p class="thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить
                                         исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
                                 </div>
                                 <div class="exemple">
-                                    <h2 class="works-item">Проект <span lang="en">Boxes</span></h2>
-                                    <p class="works-text">Приложение</p>
+                                    <h2 class="exemple__item">Проект <span lang="en">Boxes</span></h2>
+                                    <p class="exemple__text">Приложение</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="item">
-                            <a href="" class="link-img">
-                                <div class="card-thumb">
-                                <img class="images" src="./images/img06.jpg" alt="Монитор" width="370" height="294">
-                                <div class="thumb-box">
-                                    <p class="thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                        <li class="works__item">
+                            <a href="" class="works__link">
+                                <div class="thumb__card">
+                                <img class="thumb__images" src="./images/img06.jpg" alt="Монитор" width="370" height="294">
+                                <div class="thumb__box">
+                                    <p class="thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить
                                         исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
                                 </div>
                                 <div class="exemple">
-                                    <h2 class="works-item"><span lang="en">Inspiration has no Borders</span></h2>
-                                    <p class="works-text">Веб-сайт</p>
+                                    <h2 class="exemple__item"><span lang="en">Inspiration has no Borders</span></h2>
+                                    <p class="exemple__text">Веб-сайт</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="item">
-                            <a href="" class="link-img">
-                                <div class="card-thumb">
-                                <img class="images" src="./images/img07.jpg" alt="Журнал" width="370" height="294">
-                                <div class="thumb-box">
-                                    <p class="thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                        <li class="works__item">
+                            <a href="" class="works__link">
+                                <div class="thumb__card">
+                                <img class="thumb__images" src="./images/img07.jpg" alt="Журнал" width="370" height="294">
+                                <div class="thumb__box">
+                                    <p class="thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить
                                         исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
                                 </div>
                                 <div class="exemple">
-                                    <h2 class="works-item">Издание <span lang="en">Limited Edition</span></h2>
-                                    <p class="works-text">Дизайн</p>
+                                    <h2 class="exemple__item">Издание <span lang="en">Limited Edition</span></h2>
+                                    <p class="exemple__text">Дизайн</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="item">
-                            <a href="" class="link-img">
-                                <div class="card-thumb">
-                                <img class="images" src="./images/img08.jpg" alt="Бирка" width="370" height="294">
-                                <div class="thumb-box">
-                                    <p class="thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                        <li class="works__item">
+                            <a href="" class="works__link">
+                                <div class="thumb__card">
+                                <img class="thumb__images" src="./images/img08.jpg" alt="Бирка" width="370" height="294">
+                                <div class="thumb__box">
+                                    <p class="thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить
                                         исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
                                 </div>
                                 <div class="exemple">
-                                    <h2 class="works-item">Проект <span lang="en">LAB</span></h2>
-                                    <p class="works-text">Маркетинг</p>
+                                    <h2 class="exemple__item">Проект <span lang="en">LAB</span></h2>
+                                    <p class="exemple__text">Маркетинг</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="item">
-                            <a href="" class="link-img">
-                                <div class="card-thumb">
-                                <img class="images" src="./images/img09.jpg" alt="Сотрудник печатает на ноутбуке"
+                        <li class="works__item">
+                            <a href="" class="works__link">
+                                <div class="thumb__card">
+                                <img class="thumb__images" src="./images/img09.jpg" alt="Сотрудник печатает на ноутбуке"
                                     width="370" height="294">
-                                    <div class="thumb-box">
-                                        <p class="thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    <div class="thumb__box">
+                                        <p class="thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                             позволит посетителю получить
                                             исчерпывающие сведения о компании или частном лице.</p>
                                     </div>
                                     </div>
                                 <div class="exemple">
-                                    <h2 class="works-item"><span lang="en">Growing Business</span></h2>
-                                    <p class="works-text">Приложение</p>
+                                    <h2 class="exemple__item"><span lang="en">Growing Business</span></h2>
+                                    <p class="exemple__text">Приложение</p>
                                 </div>
                             </a>
                         </li>
@@ -215,44 +215,46 @@
     <!--Footer-->
     <footer class="footer">
         <div class="container">
-            <div class="address-box">
-                <a class="logo" href="./index.html">Web<span class="logo-white">Studio</span></a>
+            <div class="address__box">
+                <a class="footer__logo logo" href="./index.html">Web<span class="footer__logo--white">Studio</span></a>
                 <address class="address">
-                    <ul class="address-list">
-                        <li class="item"><a class="address-text" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
-                        <li class="item"><a class="address-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <ul class="address__list">
+                        <li class="address__item"><a class="address__text" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
+                        <li class="address__item"><a class="address__item"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a>
                         </li>
-                        <li class="item"><a class="address-item" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        <li class="address__item"><a class="address__item" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
                     </ul>
                 </address>
             </div>
-            <div class="footer-icon-wrapper">
-                <p class="text-footer-icon">присоединяйтесь</p>
-                <ul class="list-icon-wrapper">
-                    <li class="item-footer-icon">
-                        <a href="" class="footer-link-icon">
-                            <svg class="icon-social" width="20" height="20">
+            <div class="footer__wrapper">
+                <p class="footer__text">присоединяйтесь</p>
+                <ul class="footer-icon__list">
+                    <li class="footer-icon__item">
+                        <a href="" class="footer-icon__link">
+                            <svg class="icon__social" width="20" height="20">
                                 <use href="./images/symbol-defs.svg#instagram-icon"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="item-footer-icon">
-                        <a href="" class="footer-link-icon">
-                            <svg class="icon-social" width="20" height="20">
+                    <li class="footer-icon__item">
+                        <a href="" class="footer-icon__link">
+                            <svg class="icon__social" width="20" height="20">
                                 <use href="./images/symbol-defs.svg#twitter-icon"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="item-footer-icon">
-                        <a href="" class="footer-link-icon">
-                            <svg class="icon-social" width="20" height="20">
+                    <li class="footer-icon__item">
+                        <a href="" class="footer-icon__link">
+                            <svg class="icon__social" width="20" height="20">
                                 <use href="./images/symbol-defs.svg#facebook-icon"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="item-footer-icon">
-                        <a href="" class="footer-link-icon">
-                            <svg class="icon-social" width="20" height="20">
+                    <li class="footer-icon__item">
+                        <a href="" class="footer-icon__link">
+                            <svg class="icon__social" width="20" height="20">
                                 <use href="./images/symbol-defs.svg#linkedin-icon"></use>
                             </svg>
                         </a>
@@ -261,18 +263,18 @@
             </div>
             <!--Footer-block-->
             <div class="subcribe">
-                <p class="input-label light">Подпишитесь на рассылку</p>
-                <form class="modal form" autocomplete="off">
-                    <input class="input-text email" type="email" name="user-email" id="user-email" placeholder="E-mail" />
-                    <button class="button base-btn" type="submit">
-                        <span class="submit-text">Подписаться</span>
-                        <svg class="small-icon icon-send">
+                <p class="subcribe__input">Подпишитесь на рассылку</p>
+                <form class="subcribe__modal" autocomplete="off">
+                    <input class="subcribe__text" type="email" name="user-email" id="user-email" placeholder="E-mail" />
+                    <button class="button__subcribe button" type="submit">
+                        <span class="button__text">Подписаться</span>
+                        <svg class="button__icon icon-send">
                             <use href="./images/symbol-defs8_.svg#icon-send"></use>
                         </svg>
                     </button>
                 </form>
             </div>
-        </div>
+            </div>
     </footer>
 </body>
 </html>
