@@ -820,7 +820,7 @@ textarea {
   padding-bottom: 94px;
 }
 
-.main__section {
+.filter {
   display: block;
 }
 .filter__list {
@@ -862,7 +862,7 @@ textarea {
 }
 
 /* Фильтр портфолио */
-.works__box {
+.works {
   margin: -15px;
   transition-property: box-shadow, transform;
   transition-duration: var(--transition-duration);
