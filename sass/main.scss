@@ -1,3 +1,28 @@
-body {
-    background-color: aqua;
-}
+/////// UTILS
+@import './utils/variables';
+@import './utils/placeholder';
+@import './utils/mixins'; 
+/////// BASE
+@import './base/common';
+@import './base/conteiner';
+
+/////// COMPONENTS
+@import './components/logo';
+@import './components/button';
+@import './components/title';
+@import './components/social-list';
+@import './components/filter-btn';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/modal-form';
+
+//////// LAYOUT
+@import './layout/header';
+@import './layout/hero';
+@import './layout/advantage';
+@import './layout/scils';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/portfolio';
+

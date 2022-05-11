@@ -1,0 +1,32 @@
+.scils {
+    padding-bottom: 94px;
+}
+
+.scils__img {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.scils__item {
+    position: relative;
+    &+& {
+    margin-left: 30px;
+    }   
+}
+.scils__overlay {
+    @extend %align-items;
+    position: absolute;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: var(--about-overlay-color);
+}
+
+.scils__text {
+    @include font (14px, 700, 1.14, 0.03em);
+    color: var(--main-color);
+    text-transform: uppercase;
+}
