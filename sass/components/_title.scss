@@ -5,3 +5,15 @@
 @include font (36px, 700, 1.17, 0.03em);
     text-align: center;
 }
+.form__title {
+    display: block;
+    margin-bottom: 12px;
+    @include font (20px, 700, 1.15, 0.03em);
+
+    text-align: center;
+    color: var(--primary-text-color);
+
+}
+.clients__title {
+    margin-bottom: 57px;
+}

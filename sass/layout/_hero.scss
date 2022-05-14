@@ -22,12 +22,3 @@
     margin-right: auto;
 }
 
-.hero__text {
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 30px;
-    color: var(--main-color);
-@include font (44px, 900, 1.36, 0.06em);
-    text-align: center;
-    text-transform: uppercase;
-}

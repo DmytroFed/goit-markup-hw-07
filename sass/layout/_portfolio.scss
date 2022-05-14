@@ -17,35 +17,6 @@
     margin-left: 8px;
 }
 
-.filter__button {
-    padding: 6px 22px;
-    background-color: var(--team-fond-color);
-    color: var(--primary-text-color);
-
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.6;
-    letter-spacing: 0.03em;
-    display: inline-block;
-    vertical-align: top;
-    font-family: inherit;
-    cursor: pointer;
-    border: 0;
-    border-radius: 4px;
-
-    transition-property: color, background-color, box-shadow;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);
-    &:hover,
-    &:focus {
-        background-color: var(--button-color);
-        color: var(--main-color);
-        box-shadow: var(--button-shadow);
-        /* 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);*/
-    }
-}
-
 
 
 /* Фильтр портфолио */
@@ -127,17 +98,6 @@
     letter-spacing: 0.06em;
 }
 
-.exemple__text {
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    color: var(--secondary-text-color);
-
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.9;
-    letter-spacing: 0.03em;
-}
 
 .thumb__box {
     position: absolute;
@@ -160,7 +120,3 @@
     }
 }
 
-.thumb__text {
-    @include font (18px, 400, 1.56, 0.03em);
-    color: var(--main-color);
-}

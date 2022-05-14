@@ -17,11 +17,6 @@
   color: var(--secondary-text-color);
 }
 
-.agreement__text {
-  display: flex;
-  align-items:center;
-}
-
 .agreement__link {
   color: var(--accent-color);
 }
@@ -64,24 +59,6 @@
   background-image: url(../images/check-icon.svg);
   background-size: contain;
   background-origin: border-box;
-}
-.form__button {
-  display: flex;
-  margin: auto;
-  @include font (16px, 700, 1.9, 0.06em);
-
-  padding: 10px 55px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: 0px;
-  background-color: var(--accent-color);
-  color: var(--main-color);
-  cursor: pointer;
-  &:hover,
-  &:focus {
-    background-color: var(--button-color);
-    box-shadow: var(--hero-shadow);
-  }
 }
 
 .agreement__text:focus-within + .checkbox__icon {

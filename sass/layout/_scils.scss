@@ -27,8 +27,3 @@
     background-color: var(--about-overlay-color);
 }
 
-.scils__text {
-    @include font (14px, 700, 1.14, 0.03em);
-    color: var(--main-color);
-    text-transform: uppercase;
-}
