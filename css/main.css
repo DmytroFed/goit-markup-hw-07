@@ -30,7 +30,7 @@
       0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.button__subcribe, .footer-icon__link, .clients__link, .scils__overlay, .contacts-header__icon, .contacts-header__link--env, .contacts-header__link--tel, .contacts-header__link, .nav, .container.main-nav, .backdrop__btn, .icon__link, .icon__list {
+.button__subcribe, .footer-icon__link, .clients__link, .scils__overlay, .contacts-header__icon, .contacts-header__link--env, .contacts-header__link--tel, .contacts-header__link, .nav, .main-nav.container, .backdrop__btn, .icon__link, .icon__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,11 +55,6 @@ ul {
   list-style-type: none;
 }
 
-.img {
-  width: 370px;
-  height: 294px;
-}
-
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -77,19 +72,18 @@ p {
 
 img {
   display: block;
-}
-
-textarea {
-  vertical-align: none;
-  width: 448px;
-  padding: 0;
-  margin: 0;
+  width: 100%;
+  height: auto;
 }
 
 .list {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -419,6 +413,10 @@ label.comment__label {
 }
 
 .comment__name {
+  vertical-align: none;
+  width: 448px;
+  padding: 0;
+  margin: 0;
   padding: 12px 16px;
   width: 448px;
   height: 120px;
@@ -469,7 +467,7 @@ label.comment__label {
   color: var(--secondary-text-color);
 }
 
-label.agreement__text {
+.agreement__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -564,6 +562,7 @@ label.agreement__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-decoration: none;
 }
 
 .nav__item + .nav__item {
@@ -611,40 +610,17 @@ label.agreement__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: auto;
 }
 
-.contacts-header__item {
-  display: block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-.contacts-header__item:hover, .contacts-header__item:focus {
-  color: var(--accent-color);
-}
-
-.nav__link.current {
-  position: relative;
-  color: var(--accent-color);
-}
-.nav__link.current:hover::after, .nav__link.current:focus::after {
-  background-color: var(--button-color);
+.contacts-header__item + .contacts-header__item {
+  margin-left: 30px;
 }
 
 .contacts-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: auto;
-}
-
-.contacts-header__item + .contacts-header__item {
-  margin-left: 30px;
 }
 
 .contacts-header__link {
@@ -674,12 +650,36 @@ label.agreement__text {
   color: var(--accent-color);
 }
 
+.contacts-header__link--env,
+.contacts-header__link--tel {
+  text-decoration: none;
+}
+
 .contacts-header__icon {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 10px;
   fill: currentColor;
+}
+
+.contacts-header__item {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.contacts-header__item:hover, .contacts-header__item:focus {
+  color: var(--accent-color);
+}
+.contacts-header__item .nav__link.current {
+  position: relative;
+  color: var(--accent-color);
+}
+.contacts-header__item .nav__link.current:hover::after, .contacts-header__item .nav__link.current:focus::after {
+  background-color: var(--button-color);
 }
 
 .hero {
@@ -794,6 +794,8 @@ label.agreement__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 370px;
+  height: 294px;
   padding: 0;
   margin: 0;
 }
@@ -1010,7 +1012,7 @@ label.agreement__text {
 
 .footer__text {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -1150,6 +1152,11 @@ label.agreement__text {
 
 /* FOOTER BLOCK BUTTON */
 .button__subcribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  height: 50px;
   font-weight: bold;
   font-size: 16px;
   font-weight: 700;

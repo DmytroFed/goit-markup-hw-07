@@ -3,7 +3,7 @@
     outline: 1px solid var(--header-color);
 }
 
-.container.main-nav {
+.main-nav.container {
     @extend %align-items;
 }
 .nav {
@@ -12,6 +12,7 @@
 
 .nav__list {
     display: flex;
+    text-decoration: none;
 }
 
 .nav__item+.nav__item {
@@ -53,38 +54,17 @@
 
 .contacts-header {
     display: flex;
-}
-
-.contacts-header__item {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
-}
-
-.nav__link.current {
-    position: relative;
-    color: var(--accent-color);
-    &:hover::after,
-    &:focus::after {
-        background-color: var(--button-color);
-    }
-}
-
-// Contacts
-.contacts-header {
-    display: flex;
     margin-left: auto;
 }
 
 .contacts-header__item+.contacts-header__item {
     margin-left: 30px;
 }
+.contacts-header {
+    display: flex;
+}
+
+// Contacts
 
 .contacts-header__link {
     @extend %align-items;
@@ -96,16 +76,23 @@
     transition-property: color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
+
     &--env,
     &--tel {
         @extend %align-items;
         justify-content: center;
         color: var(--secondary-text-color);
     }
-        &--env:hover,
-        &--tel:hover {
-            color: var(--accent-color);
+
+    &--env:hover,
+    &--tel:hover {
+        color: var(--accent-color);
     }
+}
+
+.contacts-header__link--env,
+.contacts-header__link--tel {
+    text-decoration: none;
 }
 
 .contacts-header__icon {
@@ -114,4 +101,25 @@
     margin-right: 10px;
     fill: currentColor;
 }
+
+.contacts-header__item {
+    display: block;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+.nav__link.current {
+    position: relative;
+    color: var(--accent-color);
+    &:hover::after,
+    &:focus::after {
+        background-color: var(--button-color);
+    }
+}
+}
+
 
